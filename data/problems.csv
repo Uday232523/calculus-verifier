@@ -1,0 +1,101 @@
+problem_id,rule,expression,expression_latex,ground_truth,ground_truth_latex
+P001,quotient,x/(cos(x) + 3),\frac{x}{\cos{\left(x \right)} + 3},x*sin(x)/(cos(x) + 3)**2 + 1/(cos(x) + 3),\frac{x \sin{\left(x \right)}}{\left(\cos{\left(x \right)} + 3\right)^{2}} + \frac{1}{\cos{\left(x \right)} + 3}
+P002,chain,sin(x**2),\sin{\left(x^{2} \right)},2*x*cos(x**2),2 x \cos{\left(x^{2} \right)}
+P003,product,x*exp(x),x e^{x},x*exp(x) + exp(x),x e^{x} + e^{x}
+P004,chain,cos(x)**3,\cos^{3}{\left(x \right)},-3*sin(x)*cos(x)**2,- 3 \sin{\left(x \right)} \cos^{2}{\left(x \right)}
+P005,product,x**5,x^{5},5*x**4,5 x^{4}
+P006,chain,cos(x),\cos{\left(x \right)},-sin(x),- \sin{\left(x \right)}
+P007,product,exp(x)*cos(x),e^{x} \cos{\left(x \right)},-exp(x)*sin(x) + exp(x)*cos(x),- e^{x} \sin{\left(x \right)} + e^{x} \cos{\left(x \right)}
+P008,product,x**2*cos(x),x^{2} \cos{\left(x \right)},-x**2*sin(x) + 2*x*cos(x),- x^{2} \sin{\left(x \right)} + 2 x \cos{\left(x \right)}
+P009,product_chain,x**3*cos(sin(x)),x^{3} \cos{\left(\sin{\left(x \right)} \right)},-x**3*sin(sin(x))*cos(x) + 3*x**2*cos(sin(x)),- x^{3} \sin{\left(\sin{\left(x \right)} \right)} \cos{\left(x \right)} + 3 x^{2} \cos{\left(\sin{\left(x \right)} \right)}
+P010,product_chain,exp(x)*cos(x**2),e^{x} \cos{\left(x^{2} \right)},-2*x*exp(x)*sin(x**2) + exp(x)*cos(x**2),- 2 x e^{x} \sin{\left(x^{2} \right)} + e^{x} \cos{\left(x^{2} \right)}
+P011,product,x**3*sin(x),x^{3} \sin{\left(x \right)},x**3*cos(x) + 3*x**2*sin(x),x^{3} \cos{\left(x \right)} + 3 x^{2} \sin{\left(x \right)}
+P012,quotient,x/(x**3 + 1),\frac{x}{x^{3} + 1},-3*x**3/(x**3 + 1)**2 + 1/(x**3 + 1),- \frac{3 x^{3}}{\left(x^{3} + 1\right)^{2}} + \frac{1}{x^{3} + 1}
+P013,chain,x**2,x^{2},2*x,2 x
+P014,chain,exp(x),e^{x},exp(x),e^{x}
+P015,chain,x**4,x^{4},4*x**3,4 x^{3}
+P016,product_chain,x*sin(x)**3,x \sin^{3}{\left(x \right)},3*x*sin(x)**2*cos(x) + sin(x)**3,3 x \sin^{2}{\left(x \right)} \cos{\left(x \right)} + \sin^{3}{\left(x \right)}
+P017,product,exp(x)*sin(x),e^{x} \sin{\left(x \right)},exp(x)*sin(x) + exp(x)*cos(x),e^{x} \sin{\left(x \right)} + e^{x} \cos{\left(x \right)}
+P018,product_chain,x*exp(cos(x)),x e^{\cos{\left(x \right)}},-x*exp(cos(x))*sin(x) + exp(cos(x)),- x e^{\cos{\left(x \right)}} \sin{\left(x \right)} + e^{\cos{\left(x \right)}}
+P019,product_chain,sin(x)*cos(x),\sin{\left(x \right)} \cos{\left(x \right)},-sin(x)**2 + cos(x)**2,- \sin^{2}{\left(x \right)} + \cos^{2}{\left(x \right)}
+P020,product,x**3*exp(x),x^{3} e^{x},x**3*exp(x) + 3*x**2*exp(x),x^{3} e^{x} + 3 x^{2} e^{x}
+P021,product,x**2*sin(x),x^{2} \sin{\left(x \right)},x**2*cos(x) + 2*x*sin(x),x^{2} \cos{\left(x \right)} + 2 x \sin{\left(x \right)}
+P022,quotient,exp(x)/(sin(x) + 1),\frac{e^{x}}{\sin{\left(x \right)} + 1},exp(x)/(sin(x) + 1) - exp(x)*cos(x)/(sin(x) + 1)**2,\frac{e^{x}}{\sin{\left(x \right)} + 1} - \frac{e^{x} \cos{\left(x \right)}}{\left(\sin{\left(x \right)} + 1\right)^{2}}
+P023,product_chain,x**2*exp(3*x),x^{2} e^{3 x},3*x**2*exp(3*x) + 2*x*exp(3*x),3 x^{2} e^{3 x} + 2 x e^{3 x}
+P024,product_chain,cos(x)*cos(cos(x)),\cos{\left(x \right)} \cos{\left(\cos{\left(x \right)} \right)},sin(x)*sin(cos(x))*cos(x) - sin(x)*cos(cos(x)),\sin{\left(x \right)} \sin{\left(\cos{\left(x \right)} \right)} \cos{\left(x \right)} - \sin{\left(x \right)} \cos{\left(\cos{\left(x \right)} \right)}
+P025,chain,cos(x**2),\cos{\left(x^{2} \right)},-2*x*sin(x**2),- 2 x \sin{\left(x^{2} \right)}
+P026,chain,x**3,x^{3},3*x**2,3 x^{2}
+P027,quotient,cos(x)/(x**2 + 2),\frac{\cos{\left(x \right)}}{x^{2} + 2},-2*x*cos(x)/(x**2 + 2)**2 - sin(x)/(x**2 + 2),- \frac{2 x \cos{\left(x \right)}}{\left(x^{2} + 2\right)^{2}} - \frac{\sin{\left(x \right)}}{x^{2} + 2}
+P028,chain,exp(sin(x)),e^{\sin{\left(x \right)}},exp(sin(x))*cos(x),e^{\sin{\left(x \right)}} \cos{\left(x \right)}
+P029,chain,sin(exp(x)),\sin{\left(e^{x} \right)},exp(x)*cos(exp(x)),e^{x} \cos{\left(e^{x} \right)}
+P030,quotient,sin(x)/(x + 1),\frac{\sin{\left(x \right)}}{x + 1},cos(x)/(x + 1) - sin(x)/(x + 1)**2,\frac{\cos{\left(x \right)}}{x + 1} - \frac{\sin{\left(x \right)}}{\left(x + 1\right)^{2}}
+P031,quotient,x**2/(x**3 + 2),\frac{x^{2}}{x^{3} + 2},-3*x**4/(x**3 + 2)**2 + 2*x/(x**3 + 2),- \frac{3 x^{4}}{\left(x^{3} + 2\right)^{2}} + \frac{2 x}{x^{3} + 2}
+P032,quotient,sin(x)/(x + 3),\frac{\sin{\left(x \right)}}{x + 3},cos(x)/(x + 3) - sin(x)/(x + 3)**2,\frac{\cos{\left(x \right)}}{x + 3} - \frac{\sin{\left(x \right)}}{\left(x + 3\right)^{2}}
+P033,product_chain,x**6*exp(x),x^{6} e^{x},x**6*exp(x) + 6*x**5*exp(x),x^{6} e^{x} + 6 x^{5} e^{x}
+P034,quotient,x**3/(cos(x) + 2),\frac{x^{3}}{\cos{\left(x \right)} + 2},x**3*sin(x)/(cos(x) + 2)**2 + 3*x**2/(cos(x) + 2),\frac{x^{3} \sin{\left(x \right)}}{\left(\cos{\left(x \right)} + 2\right)^{2}} + \frac{3 x^{2}}{\cos{\left(x \right)} + 2}
+P035,chain,exp(cos(x)),e^{\cos{\left(x \right)}},-exp(cos(x))*sin(x),- e^{\cos{\left(x \right)}} \sin{\left(x \right)}
+P036,product_chain,x**9,x^{9},9*x**8,9 x^{8}
+P037,product,x*sin(x),x \sin{\left(x \right)},x*cos(x) + sin(x),x \cos{\left(x \right)} + \sin{\left(x \right)}
+P038,quotient,x**2/(x + 1),\frac{x^{2}}{x + 1},-x**2/(x + 1)**2 + 2*x/(x + 1),- \frac{x^{2}}{\left(x + 1\right)^{2}} + \frac{2 x}{x + 1}
+P039,chain,sin(x)**3,\sin^{3}{\left(x \right)},3*sin(x)**2*cos(x),3 \sin^{2}{\left(x \right)} \cos{\left(x \right)}
+P040,product_chain,x**2*exp(sin(x)),x^{2} e^{\sin{\left(x \right)}},x**2*exp(sin(x))*cos(x) + 2*x*exp(sin(x)),x^{2} e^{\sin{\left(x \right)}} \cos{\left(x \right)} + 2 x e^{\sin{\left(x \right)}}
+P041,chain,sin(x),\sin{\left(x \right)},cos(x),\cos{\left(x \right)}
+P042,product,exp(2*x),e^{2 x},2*exp(2*x),2 e^{2 x}
+P043,chain,exp(x**2),e^{x^{2}},2*x*exp(x**2),2 x e^{x^{2}}
+P044,quotient,cos(x)/(x + 3),\frac{\cos{\left(x \right)}}{x + 3},-sin(x)/(x + 3) - cos(x)/(x + 3)**2,- \frac{\sin{\left(x \right)}}{x + 3} - \frac{\cos{\left(x \right)}}{\left(x + 3\right)^{2}}
+P045,product,x*cos(x),x \cos{\left(x \right)},-x*sin(x) + cos(x),- x \sin{\left(x \right)} + \cos{\left(x \right)}
+P046,product,sin(x)**2,\sin^{2}{\left(x \right)},2*sin(x)*cos(x),2 \sin{\left(x \right)} \cos{\left(x \right)}
+P047,product_chain,exp(x)*sin(cos(x)),e^{x} \sin{\left(\cos{\left(x \right)} \right)},-exp(x)*sin(x)*cos(cos(x)) + exp(x)*sin(cos(x)),- e^{x} \sin{\left(x \right)} \cos{\left(\cos{\left(x \right)} \right)} + e^{x} \sin{\left(\cos{\left(x \right)} \right)}
+P048,product,cos(x)**2,\cos^{2}{\left(x \right)},-2*sin(x)*cos(x),- 2 \sin{\left(x \right)} \cos{\left(x \right)}
+P049,quotient,x**3/(x + 2),\frac{x^{3}}{x + 2},-x**3/(x + 2)**2 + 3*x**2/(x + 2),- \frac{x^{3}}{\left(x + 2\right)^{2}} + \frac{3 x^{2}}{x + 2}
+P050,product_chain,x**2*exp(x),x^{2} e^{x},x**2*exp(x) + 2*x*exp(x),x^{2} e^{x} + 2 x e^{x}
+P051,quotient,cos(x)/(x**3 + 2),\frac{\cos{\left(x \right)}}{x^{3} + 2},-3*x**2*cos(x)/(x**3 + 2)**2 - sin(x)/(x**3 + 2),- \frac{3 x^{2} \cos{\left(x \right)}}{\left(x^{3} + 2\right)^{2}} - \frac{\sin{\left(x \right)}}{x^{3} + 2}
+P052,quotient,x**2/(x**2 + 2),\frac{x^{2}}{x^{2} + 2},-2*x**3/(x**2 + 2)**2 + 2*x/(x**2 + 2),- \frac{2 x^{3}}{\left(x^{2} + 2\right)^{2}} + \frac{2 x}{x^{2} + 2}
+P053,quotient,sin(x)/(x**3 + 3),\frac{\sin{\left(x \right)}}{x^{3} + 3},-3*x**2*sin(x)/(x**3 + 3)**2 + cos(x)/(x**3 + 3),- \frac{3 x^{2} \sin{\left(x \right)}}{\left(x^{3} + 3\right)^{2}} + \frac{\cos{\left(x \right)}}{x^{3} + 3}
+P054,product_chain,x**2*sin(x)**3,x^{2} \sin^{3}{\left(x \right)},3*x**2*sin(x)**2*cos(x) + 2*x*sin(x)**3,3 x^{2} \sin^{2}{\left(x \right)} \cos{\left(x \right)} + 2 x \sin^{3}{\left(x \right)}
+P055,product_chain,x**2*cos(exp(x)),x^{2} \cos{\left(e^{x} \right)},-x**2*exp(x)*sin(exp(x)) + 2*x*cos(exp(x)),- x^{2} e^{x} \sin{\left(e^{x} \right)} + 2 x \cos{\left(e^{x} \right)}
+P056,quotient,sin(x)/(sin(x) + 2),\frac{\sin{\left(x \right)}}{\sin{\left(x \right)} + 2},cos(x)/(sin(x) + 2) - sin(x)*cos(x)/(sin(x) + 2)**2,\frac{\cos{\left(x \right)}}{\sin{\left(x \right)} + 2} - \frac{\sin{\left(x \right)} \cos{\left(x \right)}}{\left(\sin{\left(x \right)} + 2\right)^{2}}
+P057,quotient,x**2/(sin(x) + 2),\frac{x^{2}}{\sin{\left(x \right)} + 2},-x**2*cos(x)/(sin(x) + 2)**2 + 2*x/(sin(x) + 2),- \frac{x^{2} \cos{\left(x \right)}}{\left(\sin{\left(x \right)} + 2\right)^{2}} + \frac{2 x}{\sin{\left(x \right)} + 2}
+P058,quotient,x**3/(cos(x) + 3),\frac{x^{3}}{\cos{\left(x \right)} + 3},x**3*sin(x)/(cos(x) + 3)**2 + 3*x**2/(cos(x) + 3),\frac{x^{3} \sin{\left(x \right)}}{\left(\cos{\left(x \right)} + 3\right)^{2}} + \frac{3 x^{2}}{\cos{\left(x \right)} + 3}
+P059,product_chain,x*exp(sin(x)),x e^{\sin{\left(x \right)}},x*exp(sin(x))*cos(x) + exp(sin(x)),x e^{\sin{\left(x \right)}} \cos{\left(x \right)} + e^{\sin{\left(x \right)}}
+P060,product_chain,x**10,x^{10},10*x**9,10 x^{9}
+P061,quotient,cos(x)/(cos(x) + 2),\frac{\cos{\left(x \right)}}{\cos{\left(x \right)} + 2},-sin(x)/(cos(x) + 2) + sin(x)*cos(x)/(cos(x) + 2)**2,- \frac{\sin{\left(x \right)}}{\cos{\left(x \right)} + 2} + \frac{\sin{\left(x \right)} \cos{\left(x \right)}}{\left(\cos{\left(x \right)} + 2\right)^{2}}
+P062,quotient,sin(x)/(exp(x) + 1),\frac{\sin{\left(x \right)}}{e^{x} + 1},cos(x)/(exp(x) + 1) - exp(x)*sin(x)/(exp(x) + 1)**2,\frac{\cos{\left(x \right)}}{e^{x} + 1} - \frac{e^{x} \sin{\left(x \right)}}{\left(e^{x} + 1\right)^{2}}
+P063,chain,cos(x**3),\cos{\left(x^{3} \right)},-3*x**2*sin(x**3),- 3 x^{2} \sin{\left(x^{3} \right)}
+P064,chain,cos(exp(x)),\cos{\left(e^{x} \right)},-exp(x)*sin(exp(x)),- e^{x} \sin{\left(e^{x} \right)}
+P065,quotient,x/(cos(x) + 1),\frac{x}{\cos{\left(x \right)} + 1},x*sin(x)/(cos(x) + 1)**2 + 1/(cos(x) + 1),\frac{x \sin{\left(x \right)}}{\left(\cos{\left(x \right)} + 1\right)^{2}} + \frac{1}{\cos{\left(x \right)} + 1}
+P066,quotient,cos(x)/(x**2 + 3),\frac{\cos{\left(x \right)}}{x^{2} + 3},-2*x*cos(x)/(x**2 + 3)**2 - sin(x)/(x**2 + 3),- \frac{2 x \cos{\left(x \right)}}{\left(x^{2} + 3\right)^{2}} - \frac{\sin{\left(x \right)}}{x^{2} + 3}
+P067,chain,exp(3*x),e^{3 x},3*exp(3*x),3 e^{3 x}
+P068,product_chain,exp(x**3)*cos(x),e^{x^{3}} \cos{\left(x \right)},3*x**2*exp(x**3)*cos(x) - exp(x**3)*sin(x),3 x^{2} e^{x^{3}} \cos{\left(x \right)} - e^{x^{3}} \sin{\left(x \right)}
+P069,quotient,x**2/(cos(x) + 3),\frac{x^{2}}{\cos{\left(x \right)} + 3},x**2*sin(x)/(cos(x) + 3)**2 + 2*x/(cos(x) + 3),\frac{x^{2} \sin{\left(x \right)}}{\left(\cos{\left(x \right)} + 3\right)^{2}} + \frac{2 x}{\cos{\left(x \right)} + 3}
+P070,quotient,x**3/(x**2 + 3),\frac{x^{3}}{x^{2} + 3},-2*x**4/(x**2 + 3)**2 + 3*x**2/(x**2 + 3),- \frac{2 x^{4}}{\left(x^{2} + 3\right)^{2}} + \frac{3 x^{2}}{x^{2} + 3}
+P071,quotient,x**3/(x**2 + 2),\frac{x^{3}}{x^{2} + 2},-2*x**4/(x**2 + 2)**2 + 3*x**2/(x**2 + 2),- \frac{2 x^{4}}{\left(x^{2} + 2\right)^{2}} + \frac{3 x^{2}}{x^{2} + 2}
+P072,quotient,exp(x)/(x + 3),\frac{e^{x}}{x + 3},exp(x)/(x + 3) - exp(x)/(x + 3)**2,\frac{e^{x}}{x + 3} - \frac{e^{x}}{\left(x + 3\right)^{2}}
+P073,quotient,sin(x)/(cos(x) + 3),\frac{\sin{\left(x \right)}}{\cos{\left(x \right)} + 3},cos(x)/(cos(x) + 3) + sin(x)**2/(cos(x) + 3)**2,\frac{\cos{\left(x \right)}}{\cos{\left(x \right)} + 3} + \frac{\sin^{2}{\left(x \right)}}{\left(\cos{\left(x \right)} + 3\right)^{2}}
+P074,chain,x**6,x^{6},6*x**5,6 x^{5}
+P075,quotient,exp(x)/(exp(x) + 2),\frac{e^{x}}{e^{x} + 2},exp(x)/(exp(x) + 2) - exp(2*x)/(exp(x) + 2)**2,\frac{e^{x}}{e^{x} + 2} - \frac{e^{2 x}}{\left(e^{x} + 2\right)^{2}}
+P076,quotient,x**2/(cos(x) + 1),\frac{x^{2}}{\cos{\left(x \right)} + 1},x**2*sin(x)/(cos(x) + 1)**2 + 2*x/(cos(x) + 1),\frac{x^{2} \sin{\left(x \right)}}{\left(\cos{\left(x \right)} + 1\right)^{2}} + \frac{2 x}{\cos{\left(x \right)} + 1}
+P077,product_chain,exp(x)*exp(exp(x)),e^{x} e^{e^{x}},exp(2*x)*exp(exp(x)) + exp(x)*exp(exp(x)),e^{2 x} e^{e^{x}} + e^{x} e^{e^{x}}
+P078,chain,sin(cos(x)),\sin{\left(\cos{\left(x \right)} \right)},-sin(x)*cos(cos(x)),- \sin{\left(x \right)} \cos{\left(\cos{\left(x \right)} \right)}
+P079,quotient,x**2/(x**3 + 1),\frac{x^{2}}{x^{3} + 1},-3*x**4/(x**3 + 1)**2 + 2*x/(x**3 + 1),- \frac{3 x^{4}}{\left(x^{3} + 1\right)^{2}} + \frac{2 x}{x^{3} + 1}
+P080,product_chain,cos(x)*cos(sin(x)),\cos{\left(x \right)} \cos{\left(\sin{\left(x \right)} \right)},-sin(x)*cos(sin(x)) - sin(sin(x))*cos(x)**2,- \sin{\left(x \right)} \cos{\left(\sin{\left(x \right)} \right)} - \sin{\left(\sin{\left(x \right)} \right)} \cos^{2}{\left(x \right)}
+P081,product_chain,x**3*exp(2*x),x^{3} e^{2 x},2*x**3*exp(2*x) + 3*x**2*exp(2*x),2 x^{3} e^{2 x} + 3 x^{2} e^{2 x}
+P082,product_chain,exp(x)*exp(sin(x)),e^{x} e^{\sin{\left(x \right)}},exp(x)*exp(sin(x))*cos(x) + exp(x)*exp(sin(x)),e^{x} e^{\sin{\left(x \right)}} \cos{\left(x \right)} + e^{x} e^{\sin{\left(x \right)}}
+P083,quotient,exp(x)/(x**3 + 1),\frac{e^{x}}{x^{3} + 1},-3*x**2*exp(x)/(x**3 + 1)**2 + exp(x)/(x**3 + 1),- \frac{3 x^{2} e^{x}}{\left(x^{3} + 1\right)^{2}} + \frac{e^{x}}{x^{3} + 1}
+P084,product_chain,sin(x)*cos(x)**3,\sin{\left(x \right)} \cos^{3}{\left(x \right)},-3*sin(x)**2*cos(x)**2 + cos(x)**4,- 3 \sin^{2}{\left(x \right)} \cos^{2}{\left(x \right)} + \cos^{4}{\left(x \right)}
+P085,quotient,cos(x)/(sin(x) + 3),\frac{\cos{\left(x \right)}}{\sin{\left(x \right)} + 3},-sin(x)/(sin(x) + 3) - cos(x)**2/(sin(x) + 3)**2,- \frac{\sin{\left(x \right)}}{\sin{\left(x \right)} + 3} - \frac{\cos^{2}{\left(x \right)}}{\left(\sin{\left(x \right)} + 3\right)^{2}}
+P086,product_chain,x**3*cos(x**3),x^{3} \cos{\left(x^{3} \right)},-3*x**5*sin(x**3) + 3*x**2*cos(x**3),- 3 x^{5} \sin{\left(x^{3} \right)} + 3 x^{2} \cos{\left(x^{3} \right)}
+P087,quotient,x/(x + 2),\frac{x}{x + 2},-x/(x + 2)**2 + 1/(x + 2),- \frac{x}{\left(x + 2\right)^{2}} + \frac{1}{x + 2}
+P088,product_chain,sin(x)*cos(x**2),\sin{\left(x \right)} \cos{\left(x^{2} \right)},-2*x*sin(x)*sin(x**2) + cos(x)*cos(x**2),- 2 x \sin{\left(x \right)} \sin{\left(x^{2} \right)} + \cos{\left(x \right)} \cos{\left(x^{2} \right)}
+P089,chain,cos(sin(x)),\cos{\left(\sin{\left(x \right)} \right)},-sin(sin(x))*cos(x),- \sin{\left(\sin{\left(x \right)} \right)} \cos{\left(x \right)}
+P090,product_chain,x**6*sin(x),x^{6} \sin{\left(x \right)},x**6*cos(x) + 6*x**5*sin(x),x^{6} \cos{\left(x \right)} + 6 x^{5} \sin{\left(x \right)}
+P091,product,x**3*cos(x),x^{3} \cos{\left(x \right)},-x**3*sin(x) + 3*x**2*cos(x),- x^{3} \sin{\left(x \right)} + 3 x^{2} \cos{\left(x \right)}
+P092,product_chain,x**2*cos(cos(x)),x^{2} \cos{\left(\cos{\left(x \right)} \right)},x**2*sin(x)*sin(cos(x)) + 2*x*cos(cos(x)),x^{2} \sin{\left(x \right)} \sin{\left(\cos{\left(x \right)} \right)} + 2 x \cos{\left(\cos{\left(x \right)} \right)}
+P093,product_chain,x**3*sin(sin(x)),x^{3} \sin{\left(\sin{\left(x \right)} \right)},x**3*cos(x)*cos(sin(x)) + 3*x**2*sin(sin(x)),x^{3} \cos{\left(x \right)} \cos{\left(\sin{\left(x \right)} \right)} + 3 x^{2} \sin{\left(\sin{\left(x \right)} \right)}
+P094,quotient,x**3/(sin(x) + 1),\frac{x^{3}}{\sin{\left(x \right)} + 1},-x**3*cos(x)/(sin(x) + 1)**2 + 3*x**2/(sin(x) + 1),- \frac{x^{3} \cos{\left(x \right)}}{\left(\sin{\left(x \right)} + 1\right)^{2}} + \frac{3 x^{2}}{\sin{\left(x \right)} + 1}
+P095,product_chain,x**2*exp(x**2),x^{2} e^{x^{2}},2*x**3*exp(x**2) + 2*x*exp(x**2),2 x^{3} e^{x^{2}} + 2 x e^{x^{2}}
+P096,quotient,x**2/(x**2 + 3),\frac{x^{2}}{x^{2} + 3},-2*x**3/(x**2 + 3)**2 + 2*x/(x**2 + 3),- \frac{2 x^{3}}{\left(x^{2} + 3\right)^{2}} + \frac{2 x}{x^{2} + 3}
+P097,product_chain,sin(x)*cos(x)**2,\sin{\left(x \right)} \cos^{2}{\left(x \right)},-2*sin(x)**2*cos(x) + cos(x)**3,- 2 \sin^{2}{\left(x \right)} \cos{\left(x \right)} + \cos^{3}{\left(x \right)}
+P098,chain,sin(x**3),\sin{\left(x^{3} \right)},3*x**2*cos(x**3),3 x^{2} \cos{\left(x^{3} \right)}
+P099,product_chain,exp(2*x)*cos(x),e^{2 x} \cos{\left(x \right)},-exp(2*x)*sin(x) + 2*exp(2*x)*cos(x),- e^{2 x} \sin{\left(x \right)} + 2 e^{2 x} \cos{\left(x \right)}
+P100,product_chain,exp(cos(x))*cos(x),e^{\cos{\left(x \right)}} \cos{\left(x \right)},-exp(cos(x))*sin(x)*cos(x) - exp(cos(x))*sin(x),- e^{\cos{\left(x \right)}} \sin{\left(x \right)} \cos{\left(x \right)} - e^{\cos{\left(x \right)}} \sin{\left(x \right)}

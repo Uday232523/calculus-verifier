@@ -1,0 +1,19 @@
+problem_id,expression,ground_truth,final_model_answer,status
+P001,x/(cos(x) + 3),x*sin(x)/(cos(x) + 3)**2 + 1/(cos(x) + 3),(cos(x) + 3 + x*sin(x))/((cos(x) + 3)**2),correct_feedback
+P002,sin(x**2),2*x*cos(x**2),2*x*cos(x**2),correct_baseline
+P003,x*exp(x),x*exp(x) + exp(x),(x*exp(x) + exp(x)),correct_baseline
+P004,cos(x)**3,-3*sin(x)*cos(x)**2,3*cos(x)**2*(-sin(x)),correct_baseline
+P005,x**5,5*x**4,x**4,failed
+P006,cos(x),-sin(x),-sin(x),correct_baseline
+P007,exp(x)*cos(x),-exp(x)*sin(x) + exp(x)*cos(x),expr_diff = exp(x)*cos(x) - exp(x)*sin(x),failed
+P008,x**2*cos(x),-x**2*sin(x) + 2*x*cos(x),x**2*(-sin(x)) + 2*x*cos(x),correct_baseline
+P009,x**3*cos(sin(x)),-x**3*sin(sin(x))*cos(x) + 3*x**2*cos(sin(x)),x**3*(-sin(sin(x)))*cos(x) + 3*x**2*cos(sin(x)),correct_baseline
+P010,exp(x)*cos(x**2),-2*x*exp(x)*sin(x**2) + exp(x)*cos(x**2),exp(x)*cos(x**2) - 2*x*exp(x)*sin(x**2),correct_feedback
+P011,x**3*sin(x),x**3*cos(x) + 3*x**2*sin(x),x**3*cos(x) + 3*x**2*sin(x),correct_baseline
+P012,x/(x**3 + 1),-3*x**3/(x**3 + 1)**2 + 1/(x**3 + 1),(x**3 + 1)*(-3*x**2) + x*(3*x**2)/(x**3 + 1)**2,failed
+P013,x**2,2*x,2*x,correct_baseline
+P014,exp(x),exp(x),exp(x),correct_baseline
+P015,x**4,4*x**3,4*x**3,correct_baseline
+P016,x*sin(x)**3,3*x*sin(x)**2*cos(x) + sin(x)**3,x*3*sin(x)**2*cos(x) + sin(x)**3,correct_baseline
+P017,exp(x)*sin(x),exp(x)*sin(x) + exp(x)*cos(x),exp(x)*sin(x) + exp(x)*cos(x),correct_baseline
+P018,x*exp(cos(x)),-x*exp(cos(x))*sin(x) + exp(cos(x)),exp(cos(x)) * (1 - x * sin(x)),correct_feedback
